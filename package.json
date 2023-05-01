@@ -1,6 +1,13 @@
 {
   "name": "portfolio",
+  "author": "James Langridge <l@ngridge.com> (https://github.com/james-langridge)",
   "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/james-langridge/portfolio.git"
+  },
+  "bugs": "https://github.com/james-langridge/portfolio/issues",
+  "license": "MIT",
   "private": true,
   "scripts": {
     "dev": "next dev",
