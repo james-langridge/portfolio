@@ -5,7 +5,7 @@ export default function Work() {
   return (
     <Container>
       <div className="flex flex-col items-center text-white">
-        <h1 className="mt-28 mb-10 text-4xl">Recent Work</h1>
+        <h1 className="mt-28 mb-10 text-4xl">Recent Open Source Work</h1>
 
         <div className="flex flex-col sm:flex-row w-full justify-evenly">
           <ProjectThumbnail
