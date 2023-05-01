@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+A simple portfolio site with a contact form made with Next.js 13 (beta) and Tailwind CSS.
 
-## Getting Started
+## About The Project
 
-First, run the development server:
+This is the code for my portfolio site.  It uses [React Server Components](https://beta.nextjs.org/docs/rendering/server-and-client-components), the new Next.js 13 App Router, and a [Route Handler](https://beta.nextjs.org/docs/routing/route-handlers) for the contact form.  Feel free to use the code for your own project, but not the images.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## Run it locally
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Prerequisites
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- You will need an email account to work with nodemailer for the contact form.  I used [Private Email](https://privateemail.com).
 
-[http://localhost:3000/api/hello](http://localhost:3000/api/hello) is an endpoint that uses [Route Handlers](https://beta.nextjs.org/docs/routing/route-handlers). This endpoint can be edited in `app/api/hello/route.ts`.
+### Installation
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. Clone the repo
+   ```sh
+   git clone https://github.com/james-langridge/portfolio.git
+   ```
 
-## Learn More
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+3. Copy `.env.example` to `.env.local` and update the variables.
+    ```sh
+    cp .env.example .env.local
+    ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+6. Start the development server:
+    ```sh
+    npm run dev
+    ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Deploy your own
 
-## Deploy on Vercel
+You can clone and deploy this project on Vercel using the button below.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fjames-langridge%2Fportfolio&env=SMTP_USER,SMTP_PASSWORD,EMAIL_TO,SMTP_HOST,SMTP_PORT)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+See the [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## License
+
+Code distributed under the [MIT License](https://github.com/james-langridge/portfolio/blob/main/LICENSE).  Images copyright all rights reserved.
