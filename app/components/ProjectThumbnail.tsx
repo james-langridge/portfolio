@@ -21,7 +21,7 @@ export default function ProjectThumbnail({
           style={{objectFit: 'cover'}}
           width={3024}
           height={4032}
-          className="transition-opacity duration-300 group-hover:opacity-0"
+          className="transition-opacity duration-300 group-hover:opacity-0 brightness-50 md:brightness-100"
         />
         <p className="w-4/5 absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 opacity-100 sm:opacity-0 transition-opacity duration-300 group-hover:opacity-100 text-3xl">
           {description}
