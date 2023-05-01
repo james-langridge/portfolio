@@ -7,7 +7,7 @@ export default function About() {
       <article className="flex flex-col items-center text-white prose-xl mx-auto">
         <h1 className="mt-28 mb-10 text-4xl text-white">About</h1>
 
-        <div className="flex flex-col sm:flex-row gap-20 justify-between w-full">
+        <div className="flex flex-col lg:flex-row gap-20 justify-between w-full items-center">
           <p>
             Hi, I&apos;m James, a one-time lawyer and lifelong programmer based
             in Hamburg. I began programming awesome text-based games in BASIC on
@@ -23,9 +23,12 @@ export default function About() {
             a place in my heart.
           </p>
 
-          <div className="max-w-lg">
-            <Image src="/sitting.png" alt="James" width={3024} height={4032} />
-          </div>
+          <Image
+            src="/runway.png"
+            alt="Me doing something awesome on a skateboard."
+            width={500}
+            height={420}
+          />
         </div>
       </article>
     </Container>

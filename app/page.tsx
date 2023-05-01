@@ -7,8 +7,8 @@ export default function Home() {
         className="absolute w-full h-full object-cover brightness-50"
         src="/beach.png"
         alt="Background"
-        width={3024}
-        height={4032}
+        width={1920}
+        height={1440}
       />
       <div className="prose">
         <h1 className="absolute top-40 left-1/4 md:top-48 md:left-48 text-white text-6xl font-normal tracking-tighter">
