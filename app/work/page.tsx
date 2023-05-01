@@ -7,7 +7,7 @@ export default function Work() {
       <div className="flex flex-col items-center text-white">
         <h1 className="mt-28 mb-10 text-4xl">Recent Work</h1>
 
-        <div className="flex flex-col sm:flex-row w-full justify-evenly p-5">
+        <div className="flex flex-col sm:flex-row w-full justify-evenly">
           <ProjectThumbnail
             src="/juggling.png"
             href="/work/personal-trainer-planner"
