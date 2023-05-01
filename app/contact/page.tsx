@@ -34,9 +34,9 @@ export default function Contact() {
       <Image
         className="absolute w-full h-full object-cover z-0 brightness-50"
         src="/beach.png"
-        alt="Background"
-        width={3024}
-        height={4032}
+        alt="Amazing beach"
+        width={1920}
+        height={1440}
       />
 
       <div className="absolute inset-0 flex flex-col min-h-screen z-10">
