@@ -44,14 +44,14 @@ export default function Page() {
             alt="Mobile workout calendar with infinite scroll"
             width={392}
             height={849}
-            className="w-1/2"
+            className="sm:w-1/2 w-full"
           />
           <Image
             src="/mobileSession.png"
             alt="Mobile workout calendar with infinite scroll"
             width={392}
             height={849}
-            className="w-1/2"
+            className="sm:w-1/2 w-full"
           />
         </div>
 
