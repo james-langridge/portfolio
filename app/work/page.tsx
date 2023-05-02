@@ -1,5 +1,5 @@
-import ProjectThumbnail from '@/app/components/ProjectThumbnail'
 import Container from '@/app/components/Container'
+import ProjectThumbnail from '@/app/components/ProjectThumbnail'
 
 export default function Work() {
   return (

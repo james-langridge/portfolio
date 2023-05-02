@@ -1,4 +1,5 @@
 import Link from 'next/link'
+
 import Container from '@/app/components/Container'
 
 export default function Page() {
