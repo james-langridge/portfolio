@@ -38,7 +38,7 @@ export default function Page() {
           </li>
         </ul>
         <h2 className="text-white">Mobile view with infinite scroll</h2>
-        <div className="flex flex-col md:flex-row gap-5">
+        <div className="flex flex-col md:flex-row gap-5 items-center">
           <Image
             src="/mobileCalendar.png"
             alt="Mobile workout calendar with infinite scroll"
