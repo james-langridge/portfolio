@@ -14,7 +14,7 @@ export default function About() {
             the BBC Micro computer. Later, I graduated to a text-based massively
             multiplayer online role-playing game (MMORPG). That wasn&apos;t
             cheap to play on a dial-up connection (sorry, mum). Somewhere along
-            the way, I succumbed to the dark side, and become a lawyer. But my
+            the way, I succumbed to the dark side, and became a lawyer. But my
             love for programming never died, and eventually I found my true
             calling and dream job. Things had changed a lot since BASIC. These
             days, while still retaining the ability to fight the bad guys in
