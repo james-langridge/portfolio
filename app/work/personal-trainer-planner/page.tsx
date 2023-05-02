@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Container from '@/app/components/Container'
+import Image from 'next/image'
 
 export default function Page() {
   return (
@@ -36,6 +37,24 @@ export default function Page() {
             them.
           </li>
         </ul>
+        <h2 className="text-white">Mobile view with infinite scroll</h2>
+        <div className="flex flex-col md:flex-row gap-5">
+          <Image
+            src="/mobileCalendar.png"
+            alt="Mobile workout calendar with infinite scroll"
+            width={392}
+            height={849}
+            className="w-1/2"
+          />
+          <Image
+            src="/mobileSession.png"
+            alt="Mobile workout calendar with infinite scroll"
+            width={392}
+            height={849}
+            className="w-1/2"
+          />
+        </div>
+
         <h2 className="text-white">Purpose and Goal</h2>
         <p>
           The personal trainer was using multiple apps to assign workout
@@ -91,6 +110,17 @@ export default function Page() {
           request. The PT doesn&apos;t necessarily need background refresh of
           data.
         </p>
+
+        <h2 className="text-white">Desktop view for personal trainer</h2>
+        <Link href="/calendarTrainer.png">
+          <Image
+            src="/calendarTrainer.png"
+            alt="Admin calendar view"
+            width={1838}
+            height={1294}
+            className="w-full"
+          />
+        </Link>
 
         <h2 className="text-white">Current Status</h2>
         <p>
