@@ -43,7 +43,7 @@ export default function Page() {
         <p>
           Dynamic segments are usually used in routes like{' '}
           <code className="text-white">app/blog/[slug]/page.js</code> but I
-          wanted it more dynamic like{' '}
+          wanted it to be more dynamic like{' '}
           <code className="text-white">app/[slug]/page.js</code>, so the entire
           site could be dynamically rendered from CMS data.
         </p>

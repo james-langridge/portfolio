@@ -16,9 +16,9 @@ export default function Page() {
           View repo
         </Link>
         <p>
-          This is a full stack client management and scheduling app designed for
-          multiple users with different roles. It&apos;s made with the new
-          Next.js 13 beta features like the App Router and React Server
+          This is a full-stack client management and scheduling app designed for
+          multiple users with different roles. The app is made with the new
+          Next.js 13 beta features such as the App Router and React Server
           Components. I worked with a personal trainer (PT) to create this
           project from scratch in TypeScript with Next.js 13, React 18,
           NextAuth.js, Prisma ORM, and Tailwind CSS. Features include:
@@ -29,12 +29,11 @@ export default function Page() {
             automatically.
           </li>
           <li>
-            Mobile-friendly calendar list-view with infinite scroll for users.
+            Mobile-friendly calendar list view with infinite scroll for users.
           </li>
           <li>
             PT can create custom forms in Contentful CMS, which are rendered on
-            dynamic page routes, and emailed to the PT when the client completes
-            them.
+            dynamic page routes, and emailed to the PT when completed.
           </li>
         </ul>
         <h2 className="text-white">Mobile view with infinite scroll</h2>
@@ -81,8 +80,8 @@ export default function Page() {
         <p>
           The key thing to understand was that static and dynamic rendering is
           on the route level, and is not directly correlated to server and
-          client components. Client components can also be either statically or
-          dynamically rendered, and static rendering is the default. That also
+          client components. Client components can also be rendered either
+          statically or dynamically, and static rendering is the default. This
           means that data requests are also cached by default. So just making a
           component a client component doesn&apos;t equate to dynamic behaviour.
         </p>
@@ -94,10 +93,10 @@ export default function Page() {
         </p>
         <h3 className="text-white">PT client users</h3>
         <p>
-          These users just open the calendar, view their workouts and
-          appointments, and check off completed workouts, which mutates the
-          database. That&apos;s a good candidate for a static route that caches
-          the data, and uses background revalidation to invalidate the cache and
+          These users open the calendar, view their workouts and appointments,
+          and check off completed workouts, which mutates the database.
+          That&apos;s a good candidate for a static route that caches the data,
+          and uses background revalidation to invalidate the cache and
           regenerate the data at a set interval.
         </p>
         <h3 className="text-white">PT admin user</h3>
@@ -131,20 +130,15 @@ export default function Page() {
         </p>
         <h2 className="text-white">Lessons Learned</h2>
         <p>
-          It&apos;s common to call it a gym &quot;session&quot;, and as the
-          personal trainer also called things &quot;sessions&quot;, I went along
-          with that naming convention in the database and in the code. That was
-          a mistake, as a &quot;session&quot; is of course about authentication
-          in web development, so when I implemented NextAuth.js, I did a huge
-          refactor to change that to &quot;workout&quot;, to avoid any conflicts
-          or confusion. Oops. Also, the users of the app, apart from the
-          personal trainer, are called &quot;clients&quot;, which can also cause
-          confusion!
+          This project was and continues to be great to learn about the new
+          Next.js features, particularly how to structure apps with server and
+          client components, static and dynamic rendering, and caching
+          strategies.
         </p>
         <p>
-          More seriously, with React Server Components and automatic caching and
-          request de-duping, it&apos;s getting harder and harder to see a real
-          need for client-state management libraries like Redux or server-state
+          With React Server Components and automatic caching and request
+          de-duping, it&apos;s getting harder and harder to see a real need for
+          client-state management libraries like Redux or server-state
           management libraries like React Query. This requires thinking
           differently about the architecture of the app and is an exciting
           challenge.
