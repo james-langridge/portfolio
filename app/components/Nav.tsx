@@ -1,8 +1,9 @@
 'use client'
 
-import React, {useState} from 'react'
-import Link from 'next/link'
 import Image from 'next/image'
+import Link from 'next/link'
+import React, {useState} from 'react'
+
 import {useMediaQuery} from '@/app/hooks/useMediaQuery'
 
 export default function Nav() {

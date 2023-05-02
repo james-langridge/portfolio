@@ -1,10 +1,11 @@
 'use client'
 
-import Link from 'next/link'
 import Image from 'next/image'
+import Link from 'next/link'
 import {useState} from 'react'
-import {submitContactForm} from '@/app/lib/api'
+
 import Info from '@/app/components/Info'
+import {submitContactForm} from '@/app/lib/api'
 
 const initialForm = {
   name: '',

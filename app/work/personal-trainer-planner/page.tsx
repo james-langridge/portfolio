@@ -1,6 +1,7 @@
-import Link from 'next/link'
-import Container from '@/app/components/Container'
 import Image from 'next/image'
+import Link from 'next/link'
+
+import Container from '@/app/components/Container'
 
 export default function Page() {
   return (
