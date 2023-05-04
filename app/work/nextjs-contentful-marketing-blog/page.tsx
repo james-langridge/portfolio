@@ -6,9 +6,10 @@ export default function Page() {
   return (
     <Container>
       <article className="prose text-white">
-        <h1 className="mt-28 mb-10 text-4xl text-white prose">
+        <h1 className="mt-28 text-4xl text-white prose">
           Fit For Life Trainer
         </h1>
+        <p className="text-sm mb-10">1 May 2023.</p>
         <Link
           href="https://github.com/james-langridge/nextjs-contentful-marketing-blog"
           className="text-white hover:text-yellow-300 text-xl"

@@ -7,9 +7,10 @@ export default function Page() {
   return (
     <Container>
       <article className="prose text-white">
-        <h1 className="mt-28 mb-10 text-4xl text-white prose">
+        <h1 className="mt-28 text-4xl text-white prose">
           Personal Trainer Planner
         </h1>
+        <p className="text-sm mb-10">1 May 2023. Updated 4 May 2023.</p>
         <Link
           href="https://github.com/james-langridge/personal-trainer-planner"
           className="text-white hover:text-yellow-300 text-xl"
@@ -54,7 +55,6 @@ export default function Page() {
             className="sm:w-1/2 w-full"
           />
         </div>
-
         <h2 className="text-white">Purpose and Goal</h2>
         <p>
           The personal trainer was using multiple apps to assign workout
@@ -69,22 +69,61 @@ export default function Page() {
           completely new paradigm for React developers.
         </p>
         <h2 className="text-white">Spotlight</h2>
-
         <p>
-          Data fetching and state management was an interesting challenge, as
-          the core of the app is an interactive shared calendar that needs to
-          sync updates between users in both directions. Even managing state
-          between routes for the admin user was a challenge because, by default,
-          Next.js now renders routes statically, caching data requests.
+          Data fetching and caching was an interesting problem, as the core of
+          the app is an interactive shared calendar that needs to sync updates
+          between users in both directions. By default, Next.js 13 renders
+          routes statically, caching data requests. The caching behaviour was
+          not consistent between dev and production, making development more
+          difficult.
         </p>
-
+        <table>
+          <tbody>
+            <tr>
+              <th>Static Rendering (default)</th>
+              <td>
+                Both Server and Client Components are pre-rendered on the server
+                at build time.
+              </td>
+            </tr>
+            <tr>
+              <th>Dynamic Rendering</th>
+              <td>
+                Both Server and Client Components are rendered on the server at
+                request time. The result of the work is not cached.
+              </td>
+            </tr>
+          </tbody>
+        </table>
         <p>
-          The key thing to understand was that static and dynamic rendering is
-          on the route level, and is not directly correlated to server and
-          client components. Client components can also be rendered either
-          statically or dynamically, and static rendering is the default. This
-          means that data requests are also cached by default. So just making a
-          component a client component doesn&apos;t equate to dynamic behaviour.
+          The key thing is that static (cache) and dynamic (no cache) rendering
+          is on the route, not the component, level. Client components, like
+          server components, can be rendered either statically or dynamically,
+          and static rendering is the default. This means that data requests are
+          also cached by default. So just making a component a client component
+          doesn&apos;t mean dynamic behaviour.
+        </p>
+        <table>
+          <tbody>
+            <tr>
+              <th>Server Components (default)</th>
+              <td>
+                React Server Components: server-only with no interactivity,
+                state or lifecycle effects.
+              </td>
+            </tr>
+            <tr>
+              <th>Client Components</th>
+              <td>Pre-rendered on the server and hydrated on the client.</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>
+          Caching can be configured on the route-segment level or per-request
+          level. The route-segment level can be configured in Pages (page.tsx),
+          Layouts (layout.tsx), or Route Handlers (route.ts). Using dynamic data
+          fetching (configuring no cache) in a layout or a page will render the
+          whole route dynamically, at request time.
         </p>
         <p>
           Another problem is that the personal trainer and the users have
@@ -110,7 +149,6 @@ export default function Page() {
           request. The PT doesn&apos;t necessarily need background refresh of
           data.
         </p>
-
         <h2 className="text-white">Desktop view for personal trainer</h2>
         <Link href="/calendarTrainer.png">
           <Image
@@ -121,7 +159,6 @@ export default function Page() {
             className="w-full"
           />
         </Link>
-
         <h2 className="text-white">Current Status</h2>
         <p>
           The beta app is being used in production by the personal trainer and a
